@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InverPres</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>InverPres</h1>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Productos Disponibles</h2>
+            <!-- Los productos se insertarán aquí dinámicamente -->
+        </section>
+        <section id="carts">
+            <h2>Comprar</h2>
+            <ul id="buyCart"></ul>
+            <h3>Total: $<span id="buyTotal">0</span></h3>
+            <button class="buy" onclick="sendMessage('buy')">Confirmar Compra</button>
+
+            <h2>Vender</h2>
+            <ul id="sellCart"></ul>
+            <h3>Total: $<span id="sellTotal">0</span></h3>
+            <button class="sell" onclick="sendMessage('sell')">Confirmar Venta</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Inversion sujeta al valor de productos adquiridos</p>
+        <a href="index2.html">Consulta por tu Prestamo Aquí</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

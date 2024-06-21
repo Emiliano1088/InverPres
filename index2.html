@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Préstamos</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Préstamos InverPres</h1>
+        <form id="loanForm">
+            <div>
+                <label for="amount">Monto del Préstamo:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div>
+                <label for="months">Plazo (meses):</label>
+                <input type="number" id="months" name="months" min="1" max="12" required>
+            </div>
+            <button type="button" onclick="simulateLoan()">Simular Préstamo</button>
+        </form>
+        <div id="result">
+            <h2>Resultado de la Simulación</h2>
+            <div id="simulationResult"></div>
+            <button id="sendWhatsApp" onclick="sendToWhatsApp()">Confirmar Prestamo</button>
+            <button id="reset" onclick="resetSimulation()">Reiniciar Pagina</button>
+            <button id="newPage" onclick="goToNewPage()">Ir a Inversiones</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
